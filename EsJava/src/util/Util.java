@@ -22,9 +22,9 @@ public class Util {
      * */
     public static void stampa(int[] a){
         System.out.println("L'array "+a+" contiene: ");
-    for(int i=0;i<a.length;i++) {
-        System.out.println(a[i]);
-    }//end for
+        for(int i=0;i<a.length;i++) {
+            System.out.println(a[i]);
+        }//end for
     }//end stampa
     public static int minimo(int[] a){
         int minimo=a[0];
@@ -34,14 +34,14 @@ public class Util {
         }//end for
         return minimo;
     }//end minimo
-     public static int indiceMinimo(int[] a){
+    public static int indiceMinimo(int[] a){
         int minimo=a[0];
         for(int i=0;i<a.length;i++){
             if(a[i]<minimo)
                 minimo=a[i];
         }//end for
-         return minimo;
-     }//end indiceMinimo
+        return minimo;
+    }//end indiceMinimo
     public static int[] sommaVettoriale(int[] a1 ,int[] a2){
         int[] a3 = new int[a1.length];
         if(a1.length==a2.length) {
@@ -51,7 +51,7 @@ public class Util {
         }//end if
         return  a3;
     }//end sommaVettoriale
-    }//end Util
+}//end Util
 
 
     /* metodo minimo -> restituisce il valore più piccolo
@@ -60,5 +60,3 @@ public class Util {
     *  che somma elemento per elemento
     *  ES: [1,2,3] e [2,3,4,5] : ritorno [3,5,7,5]
     * */
-
-
