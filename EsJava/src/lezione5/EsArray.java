@@ -1,6 +1,4 @@
 package lezione5;
-
-import java.util.Scanner;
 import util.Util;
 public class EsArray {
     public static void main(String[] args) {
