@@ -1,0 +1,19 @@
+Nomi delle classi vanno scritte con la prima lettera maiuscola.
+Codice documentato:
+Autore=nome e cognome o team.
+data.
+Cosa fa questa classe,cioè spiegare cosa si svolgera ni questa sezione.
+Il nome della classe deve essere sempre sempre con la lettera maiuscola iniziale.
+Va sempre dichiarata la cartella di inserimento: package cartella.
+Buona pratica è commentare ogni parentesi graffa finale:
+Interagire con l'utente,in modo tale da accompagnarlo a l meglio durante la sua UX(user experience).
+Con ciò si intende con il progettare un programma A PROVA DI STUPIDO, ovvero,che chiunque deve essere capace ad utilizzare
+quresto programma SENZA DIFFICOLTA',il programma deve:
+1. Dire all'utebte se si deve inserire qualcosa(SE SI CHE COSA!0):
+    1.1 Usando per esempio System.out.println();
+    1.2 Salvare quello che viene inserito dentro una variabile.
+2. Mantenere la finestra di input e output ordinati!
+    2.1 L'utente deve leggere senza difficoltà la finestra.
+3. Per ogni valorte restituito solitamente devono essere stampati in modo intuitivo.
+    3.1 Specificare cosa sto stampando a video.
+

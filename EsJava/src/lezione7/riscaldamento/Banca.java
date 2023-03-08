@@ -1,5 +1,4 @@
 package lezione7.riscaldamento;
-
 import java.util.Scanner;
 
 public class Banca {
@@ -7,7 +6,9 @@ public class Banca {
         Scanner tastiera=new Scanner(System.in);
         boolean b=true;
         int valore;
-        ContoCorrente conto=new ContoCorrente("Gino","Pippo");
+        ContoCorrente conto=new ContoCorrente("Gino","Pippo","Ad20k9");
+        //per stamppare ciò che c'è dentro persona
+        //System.out.println(conto.toString());
         while (b){
         System.out.println("Che operazione vuoi fare:\n 1)Deposita\n2)Preleva\n3)Esci");
         int operazione=tastiera.nextInt();
@@ -32,6 +33,7 @@ public class Banca {
                     System.out.println("Operazione non disponibile");
                     break;
             }//end switch
+          ContoCorrente.getProssimoId();
         }//end while
     }//end main
 }

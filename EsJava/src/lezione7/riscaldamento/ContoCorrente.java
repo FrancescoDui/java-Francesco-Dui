@@ -1,15 +1,17 @@
 package lezione7.riscaldamento;
 
 public class ContoCorrente {
-    private String nome;
-    private String cognome;
     private  double saldo;
+    private static int prossimoId=0;
+    //tutte le costanti per convenzione si scrivono in maiuscolo
+    public final static String NOME_BANCA="Unicredit";
+    private Persona persona;
+    private String pin;
     private int id;
-    private static int prossimoId;
 
-    public ContoCorrente(String nome , String cognome) {
-        this.nome = nome;
-        this.cognome = cognome;
+    public ContoCorrente(String nome,String cognome,String pin){
+        this.persona=new Persona(nome,cognome);
+        this.pin=pin;
         this.saldo =0;
         this.id=prossimoId++;
     }//end costruttore
@@ -32,9 +34,14 @@ public class ContoCorrente {
     public double getSaldo(){
        return saldo;
     }//end getSaldo
-    public void setNome(String nome){
-       this.nome=nome;
-    }//end setNome
+    public static int getProssimoId(){
+        return prossimoId;
+    }//end getProssimoId
 
-
+    @Override
+    public String toString() {
+        return "ContoCorrente{" +
+                "persona=" + persona.toString() +
+                '}';
+    }
 }//end ContoCorrente
