@@ -7,8 +7,8 @@ Il nome della classe deve essere sempre sempre con la lettera maiuscola iniziale
 Va sempre dichiarata la cartella di inserimento: package cartella.
 Buona pratica è commentare ogni parentesi graffa finale:
 Interagire con l'utente,in modo tale da accompagnarlo a l meglio durante la sua UX(user experience).
-Con ciò si intende con il progettare un programma A PROVA DI STUPIDO, ovvero,che chiunque deve essere capace ad utilizzare
-quresto programma SENZA DIFFICOLTA',il programma deve:
+Con ciò si intende con il progettare un programma A PROVA DI STUPIDO, ovvero,che chiunque deve essere
+capace ad utilizzare quresto programma SENZA DIFFICOLTA',il programma deve:
 1. Dire all'utebte se si deve inserire qualcosa(SE SI CHE COSA!0):
     1.1 Usando per esempio System.out.println();
     1.2 Salvare quello che viene inserito dentro una variabile.
@@ -86,3 +86,31 @@ tipo restituito dalla funzione ;
 Nome funzione;
 Parametri formali(parametri che scrivo dentro le parentesi tonde mentre dichiaro la funzione);
 Parametri attuali(parametri che scrivo dentro le parentesi nel momento del richiamo della funzione);
+------------------------------------------------------------------------------------------------------------------------
+
+*******************************************======Programmazione Oggetti======*******************************************
+Programmazione Oggetti:
+Oggetto->possiede degli stati(attributi sono le variabili) e dei comportamenti(azioni);
+Classe->è un impronta o stampo che va a descrivere il comportamento o lo stato oggetto;
+
+Oggetto:
+Stati possono essere intesi come classiche variabili.
+Comportamenti definiti tramite metodi(funzioni).
+
+Classe:
+è un tamplate,cioè come rappresento i miei oggetti all'interno del mondo SW.
+Variabili locali->dichiarate all'interno dei metodi,non vale fuoi dal suo scoop;
+Variabili d'istanza->quelle messe fuori dai metodi;
+Varaibili di classe->fuori dai metodi ma con l'attributo static;
+
+Costruttori,sono dei metodi che vanno utilizzati ogni volta che serve per dichiarare l'oggetto,serve per
+istanziare l'oggetto al di fuori della classe;
+Il nome della classe e il nome del costruttore devono essere uguali.
+Quando istanzi un ogetto di una classe dopo (new) va inserito il costruttore.
+
+Metodo toString(),è un metodo che implementa la stampa degli attributi della classe in base a come l'ho definita,mentre
+se non dichiaro toString() stampa l'indirizzodella cella di memoria della classe;
+
+@Override:serve per sovrascrivere un metodo già presente di base.
+
+Overload:dichiaro lo stesso metodo che diferisce per parametri o tipo di ritorno.
