@@ -1,5 +1,5 @@
 package esercitazione.lezione4;
-/* @author Francesco Dui
+/** @author Francesco Dui
  * Questo programma controlla se ci sono righe uguali
  *  all'interno di una matrice*/
 import java.util.Scanner;

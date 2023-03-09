@@ -1,5 +1,5 @@
 package esercitazione.lezione4;
-/* @author Francesco Dui
+/** @author Francesco Dui
 * Questo programma controlla se esistono delle righe uguali tra due array*/
 import java.util.Scanner;
 
