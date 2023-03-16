@@ -6,7 +6,34 @@ public class ContoCorrenteBancario {
     private String password="";
     private double saldoConto=0;
 
-    public ContoCorrenteBancario(String user, String password,double saldoConto) {
+    public ContoCorrenteBancario() {
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public double getSaldoConto() {
+        return saldoConto;
+    }
+
+    public void setSaldoConto(double saldoConto) {
+        this.saldoConto = saldoConto;
+    }
+
+    public ContoCorrenteBancario(String user, String password, double saldoConto) {
         this.user = user;
         this.password = password;
         this.saldoConto=saldoConto;

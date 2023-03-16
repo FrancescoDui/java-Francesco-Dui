@@ -1,3 +1,4 @@
+
 Nomi delle classi vanno scritte con la prima lettera maiuscola.
 Codice documentato:
 Autore=nome e cognome o team.
@@ -93,6 +94,10 @@ Programmazione Oggetti:
 Oggetto->possiede degli stati(attributi sono le variabili) e dei comportamenti(azioni);
 Classe->è un impronta o stampo che va a descrivere il comportamento o lo stato oggetto;
 
+Paradigmi:
+# ereditarietà processo con la quale una o piu classi acquisiscono proprieta(attributi e metodi).
+superclasse->sottoclasse;
+
 Oggetto:
 Stati possono essere intesi come classiche variabili.
 Comportamenti definiti tramite metodi(funzioni).
@@ -114,3 +119,4 @@ se non dichiaro toString() stampa l'indirizzodella cella di memoria della classe
 @Override:serve per sovrascrivere un metodo già presente di base.
 
 Overload:dichiaro lo stesso metodo che diferisce per parametri o tipo di ritorno.
+
