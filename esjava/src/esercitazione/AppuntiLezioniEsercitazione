@@ -96,6 +96,7 @@ Classe->è un impronta o stampo che va a descrivere il comportamento o lo stato 
 
 Paradigmi:
 # ereditarietà processo con la quale una o piu classi acquisiscono proprieta(attributi e metodi).
+Con l'uso dell'ereditarietà l'informazione è recuperabile in maniera gerarchica.
 superclasse->sottoclasse;
 
 Oggetto:

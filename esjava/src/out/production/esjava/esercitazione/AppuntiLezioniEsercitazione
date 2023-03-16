@@ -96,6 +96,7 @@ Classe->è un impronta o stampo che va a descrivere il comportamento o lo stato 
 
 Paradigmi:
 # ereditarietà processo con la quale una o piu classi acquisiscono proprieta(attributi e metodi).
+Con l'uso dell'ereditarietà l'informazione è recuperabile in maniera gerarchica.
 superclasse->sottoclasse;
 
 Oggetto:
@@ -119,4 +120,13 @@ se non dichiaro toString() stampa l'indirizzodella cella di memoria della classe
 @Override:serve per sovrascrivere un metodo già presente di base.
 
 Overload:dichiaro lo stesso metodo che diferisce per parametri o tipo di ritorno.
+
+Modificatori di accesso:
+sono delle chiavi che aggiungiamo a variabili o metodi per cambiare il loro significato all'interno del nostro programma.
+Ci da informazioni su come utilizzarli e accedervi.
+di default sono protected(valide solo all'interno delle cartelle e nelle sottoclassi)
+public si vedono sempre
+private si puo accedere solo all'interno della classe (oppure fuori solo grazie a getter e setter)
+incapsulare si intende nascondere l'implementazione.
+
 

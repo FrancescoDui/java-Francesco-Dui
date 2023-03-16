@@ -35,7 +35,7 @@ public class Persona {
     public String getCognome() {
         return cognome;
     }
-    
+
     @Override
     public String toString()
     {
