@@ -120,3 +120,12 @@ se non dichiaro toString() stampa l'indirizzodella cella di memoria della classe
 
 Overload:dichiaro lo stesso metodo che diferisce per parametri o tipo di ritorno.
 
+Modificatori di accesso:
+sono delle chiavi che aggiungiamo a variabili o metodi per cambiare il loro significato all'interno del nostro programma.
+Ci da informazioni su come utilizzarli e accedervi.
+di default sono protected(valide solo all'interno delle cartelle e nelle sottoclassi)
+public si vedono sempre
+private si puo accedere solo all'interno della classe (oppure fuori solo grazie a getter e setter)
+incapsulare si intende nascondere l'implementazione.
+
+

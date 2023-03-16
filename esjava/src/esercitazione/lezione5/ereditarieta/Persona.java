@@ -1,4 +1,4 @@
-package esercitazione.lezione5;
+package esercitazione.lezione5.ereditarieta;
 
 public class Persona {
     private String nome;
