@@ -92,8 +92,8 @@ public class Animale {
     }
 
     /*Nel caso usassi un metodo statico perderei il vantaggio di fare affidamento alle variabili già presenti
-    * nella classe e dovrei specificarle ogni volta che istanzio la classe e il suo metodo del tiopo
-    *  Animale.toString(nome,tipo...) facendo di che il metodo non sia relativo all'oggetto che ho creato ma
+    * nella classe e dovrei specificarle ogni volta che istanzio la classe e il suo metodo del tipo
+    *  Animale.toString(nome,tipo...) facendo in che il metodo non sia relativo all'oggetto che ho creato ma
     * propio della classe.
     *   */
     public static void main(String[] args) {

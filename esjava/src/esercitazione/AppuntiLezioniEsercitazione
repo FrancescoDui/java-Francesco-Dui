@@ -128,5 +128,23 @@ di default sono protected(valide solo all'interno delle cartelle e nelle sottocl
 public si vedono sempre
 private si puo accedere solo all'interno della classe (oppure fuori solo grazie a getter e setter)
 incapsulare si intende nascondere l'implementazione.
+------------------------------------------------------------------------------------------------------------------------
 
+*************************************************======Astrazione======*************************************************
+Processo che nasconde i dettagli implementativi all'utente.
+(mostrare cosa fa l'oggetto non come lo fa)
+una classe Astratta non può essere istanziata (istanziabile solo tramite override)
+Metodoi Astratti:
+posso dichiarare metodi A. solo se la classe è astratta;
+Per dichiarare un metodo astratto,si usa la stessa signature di un metodo normale,
+aggiungendo la keyword abstract;
+Metodfo astratto non contiene il body;
+------------------------------------------------------------------------------------------------------------------------
 
+************************************************======Interfaccia======************************************************
+Inetfaccia(classe astratta ma più restrittiva)è una parte di una classe che sp0iega al programmatore come usarla(simile ad un contratto);
+Defisisce tutti i metodi che devi implementare in base alle necessità del nostro dominio;
+Per dichiarare l'intefaccia uso la keyword interface;
+Costituita solo dalle intestazioni dei metodi pubblici  e dalle costanti pubbliche di classe;
+Proggettista o programmatore sfruttano l'interfaccia per ricordare quali metodi devo implementare;
+una classe può implementare più interfacce  e classi differenti possono implemnetare la stessa interfaccia;
