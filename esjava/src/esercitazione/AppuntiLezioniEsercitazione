@@ -17,6 +17,7 @@ capace ad utilizzare quresto programma SENZA DIFFICOLTA',il programma deve:
     2.1 L'utente deve leggere senza difficoltà la finestra.
 3. Per ogni valorte restituito solitamente devono essere stampati in modo intuitivo.
     3.1 Specificare cosa sto stampando a video.
+------------------------------------------------------------------------------------------------------------------------
 
 ***********************************************=======Introduzione=======***********************************************
 Nomi delle classi vanno scritte con la prima lettera maiuscola.
@@ -53,7 +54,7 @@ for:
 
 ------------------------------------------------------------------------------------------------------------------------
 
-***********************************************=======Array=======***********************************************
+**************************************************=======Array=======**************************************************
 Array:
 È una struttura dati omogenea,che condivide la stessa tipologia di dati salvati all'interno del heap.All'interno della
 memoria sarà salvata in modo indicizzato e consecutivo.
@@ -142,9 +143,19 @@ Metodfo astratto non contiene il body;
 ------------------------------------------------------------------------------------------------------------------------
 
 ************************************************======Interfaccia======************************************************
-Inetfaccia(classe astratta ma più restrittiva)è una parte di una classe che sp0iega al programmatore come usarla(simile ad un contratto);
+Inetfaccia(classe astratta ma più restrittiva)è una parte di una classe che spiega al programmatore
+come usarla(similead un contratto);
 Defisisce tutti i metodi che devi implementare in base alle necessità del nostro dominio;
 Per dichiarare l'intefaccia uso la keyword interface;
 Costituita solo dalle intestazioni dei metodi pubblici  e dalle costanti pubbliche di classe;
 Proggettista o programmatore sfruttano l'interfaccia per ricordare quali metodi devo implementare;
 una classe può implementare più interfacce  e classi differenti possono implemnetare la stessa interfaccia;
+------------------------------------------------------------------------------------------------------------------------
+
+*************************************************======Eccezioni======**************************************************
+Errore a tempo di compilazione=errori grammaticali o sintassi;
+Eccezione=errore a tempo di esecuzione(errori anomali che il programmatore deve gestire,non devono capitare);
+Quando un eccezione viene lanciata il programma si arresta,dobbiamo evitare questo tramite un if;
+blocco che rappresenta la condizione->try{}
+blocco che esegue l'eccezione->catch{}
+blocco eseguito in qualsiasi caso->finally{}
