@@ -14,6 +14,6 @@ public class Main {
         System.out.println("---------------------------------------------------------------triangolo scaleno");
         System.out.println("il perimetro è: "+ts3.calcolaPerimetro());
         System.out.println("L'area è : "+ts3.calcolaArea());
-
+        
     }
 }

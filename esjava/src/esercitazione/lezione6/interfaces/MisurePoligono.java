@@ -11,7 +11,6 @@ public interface MisurePoligono {
      * @return perimetro del poligono
      */
     public double calcolaPerimetro();
-
     /**
      * metodo che calcola la mediana di un determinato poligono
      * @return mediana di un poligono
