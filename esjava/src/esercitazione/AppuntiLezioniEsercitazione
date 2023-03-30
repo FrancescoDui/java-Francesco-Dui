@@ -41,20 +41,58 @@ ad utilizzare quresto programma SENZA DIFFICOLTA',il programma deve:
 
 ------------------------------------------------------------------------------------------------------------------------
 
-***********************************************==========Cicli==========***********************************************
+***********************************************==========Cicli==========************************************************
 While :
     esegue le istruzioni all'interno del ciclo fino a quando la condizione non è rispettata.
 
+    Quseto ciclo ha la caratteristica principale di controllare immediatamente la condizione di accesso:
+    -se la condizione (booleana) è verificata-->eseguo le istruzioni interne del ciclo;
+    -altrimenti passo alla porzione di codice successivo;
+
+    esempio:
+
+    while(condizioni){
+    istruzioni dentro il ciclo
+    }//end while
+    istruzioni dopo il ciclo
+
 do-while:
     uguale al while.
-    apparte che la prima volta le istruzioni vengono sempre compiuta.
+    apparte che la prima volta le istruzioni vengono sempre compiute.
+
+    esempio:
+
+    do{
+    istruzioni da eseguire ALMENO UNA VOLTA
+    }while(condizione);//end do-while
+
 
 for:
     uguale al while,che fa N iterazioni.
 
+    È un ciclo anch'esso intercambiabile con il while,con la sola differenza che:
+        -è più estetico ed intuitivo
+        -le iterazioni da eseguire sono conosciute a priori:
+            *noi sappiamo quante volte iterare all'interno della nostra struttura dati!
+            es: array-->length,
+                arraylist-->size()
+    esempio:
+    for(int index=0;condizione di arresto;incremento indice){
+    istruzioni da eseguireper la struttura dati e/o altro
+    }//end for
+
+
+Ripasso:
+Quando all'interno e/o in una parte del mio programma ho una sezione di codice
+che viene ripetuta un certo numero di volte (X volte),onde evitare di scrivere
+X volte lo stesso codice utilizzato,quelli sono chiamati cicli.
+Nella stragrande maggioranzza dei casi, i cicli si utilizzano quando devo esplorare una struttura
+dati (sia che sia primitiva-->array,oppure,dinamica-->arraylist)utilizzo i cicli.Utilizzo i cicli per
+iterare X volte-->lunghezzadella struttura.
+
 ------------------------------------------------------------------------------------------------------------------------
 
-**************************************************=======Array=======**************************************************
+**************************************************=======Array=======***************************************************
 Array:
 È una struttura dati omogenea,che condivide la stessa tipologia di dati salvati all'interno del heap.All'interno della
 memoria sarà salvata in modo indicizzato e consecutivo.
@@ -72,9 +110,47 @@ risolvono questo probloema.
 
 Da Notare:
 Errore a tempo di esecuzione se inserisco un valore di indice non esistente : Error IndexOutOfBoundException.
+
+Ripasso:
+Gli array(vettori) sonp il primo esempio di strutture dati (nonostante siano primitivi) e di oggetti che abbiamo visto.
+
+Sono degli oggetti in quanto:
+    1.Sono istanziati con la keyword "new";
+    2.Sono istanziati all'interno dello heap;
+        2.1.Sono dei riferimenti(puntatori)all'interno della memoria;
+    3.Sono denominati primitivi,in quanto non possiedono dinamicita:
+        3.1.Hanno una lunghezza fissa;
+        3.2.Vengono solitamente dichiarati ed utilizzati con tipi primitivi(int,double,float,boolean);
+
+Il loro problemarisiede nel fatto che la loro lunghezza fissa,le rende una struttura dati statica,quindi,
+difficile da gestire per quanto riguarda anche le performance del programma-->
+    -es: se voglio aggiungere un elemento al mio array alla fine e non ho più spazio,sono costretto a
+        dichiarare un nuovo array (con la lunghezza maggiore rispetto al precedente) ed inserire il nuovoelemento;
+    -stesso discorso vale se voglio inserire/cancellare elementi in posizione i-esima;
+
+Per accedere ad un valore dell'array devo indicizzare!Considerate,quindi l'array come se fosse
+un insieme di caselle consecutive dove ogni casella ha un indice (che parte da 0 fino a N-1),e per
+accedere ad ogni e/o ad un elemento dell'array accedo all'indice stesso!
+
+Per questo al loro posto vengonoutilizzate le strutture dati dinamiche (arraylist,hashmap etc..)
+
+Per esplorare (stampare,inserire etc..)gli array, devo far ricorso ai cicli,specilamente al cilco for ,
+utilizzando come attributi di condizione LENGTH!
+esempio:
+//Dichiarazione
+-dataType[] array= new dataType[];
+-double[] votiInformatizca=new double[10];
+//esplorazione
+for(int i=0;i<votiInformatica.length;i++){
+istruzioni
+}//end for
+for(int i=0;i<votiInformatica.length;i++){
+sout(votiInformatica[i]);
+}//end for
+
 ------------------------------------------------------------------------------------------------------------------------
 
-*********************************************=======Funzioni/Metodi=======*********************************************
+*********************************************=======Funzioni/Metodi=======**********************************************
 Metodi/Funzioni:
 Cos'è?
 È un blocco di codice,racchiuso tra le parentesi graffe,esegue una porzione di codice in base a ciò che
@@ -142,7 +218,7 @@ aggiungendo la keyword abstract;
 Metodfo astratto non contiene il body;
 ------------------------------------------------------------------------------------------------------------------------
 
-************************************************======Interfaccia======************************************************
+************************************************======Interfaccia======*************************************************
 Inetfaccia(classe astratta ma più restrittiva)è una parte di una classe che spiega al programmatore
 come usarla(similead un contratto);
 Defisisce tutti i metodi che devi implementare in base alle necessità del nostro dominio;
@@ -159,3 +235,18 @@ Quando un eccezione viene lanciata il programma si arresta,dobbiamo evitare ques
 blocco che rappresenta la condizione->try{}
 blocco che esegue l'eccezione->catch{}
 blocco eseguito in qualsiasi caso->finally{}
+
+------------------------------------------------------------------------------------------------------------------------
+
+*********************************************==Strutture Dati Dinamiche==***********************************************
+ArrayList:
+    1.Riscolve i problemi degli array primitivi;
+    2.Implementa l'interfaccia chiamata List<T> (accettano solo oggetti,T=tipo generico di oggetto);
+    3.Lavora con gli oggetti;
+Lavoro in notazione O(n);
+Hashmap:
+    1.Lavora con coppie chiave-valore <K,T>;
+     1.1.La chiave deve essere univoca,altrimenti si sovrascrive;
+    2.Implementa interfaccia Map<K,T>;
+Lavoro in notazione O(1);
+
