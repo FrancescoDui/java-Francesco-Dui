@@ -1,0 +1,5 @@
+1.Creare uno studente con alcini attributi di classe (nome,cognome,età) che contenga una
+lista di voti di una materia a caso e calcolarne la media:
+    -gestire i casi:
+        -in cui in media sia insufficiente.
+           -i voti non siano presenti.

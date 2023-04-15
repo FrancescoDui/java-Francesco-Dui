@@ -241,12 +241,16 @@ blocco eseguito in qualsiasi caso->finally{}
 *********************************************==Strutture Dati Dinamiche==***********************************************
 ArrayList:
     1.Riscolve i problemi degli array primitivi;
-    2.Implementa l'interfaccia chiamata List<T> (accettano solo oggetti,T=tipo generico di oggetto);
+    2.Implementa l'interfaccia chiamata List<T>
+           (accettano solo oggetti,T=tipo generico,accetta solo oggetto anche
+            se fanno riferimento a tipi primitivi);
     3.Lavora con gli oggetti;
 Lavoro in notazione O(n);
 Hashmap:
     1.Lavora con coppie chiave-valore <K,T>;
-     1.1.La chiave deve essere univoca,altrimenti si sovrascrive;
+     1.1.Sono l'omologo degli Array associativi;
+        ( HASHMAP-->JSON )
+     1.2.La chiave deve essere univoca,altrimenti si sovrascrive il valore precedente;
     2.Implementa interfaccia Map<K,T>;
 Lavoro in notazione O(1);
 

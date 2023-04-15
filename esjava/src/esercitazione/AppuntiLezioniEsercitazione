@@ -235,18 +235,64 @@ Quando un eccezione viene lanciata il programma si arresta,dobbiamo evitare ques
 blocco che rappresenta la condizione->try{}
 blocco che esegue l'eccezione->catch{}
 blocco eseguito in qualsiasi caso->finally{}
-
 ------------------------------------------------------------------------------------------------------------------------
 
 *********************************************==Strutture Dati Dinamiche==***********************************************
 ArrayList:
     1.Riscolve i problemi degli array primitivi;
-    2.Implementa l'interfaccia chiamata List<T> (accettano solo oggetti,T=tipo generico di oggetto);
+    2.Implementa l'interfaccia chiamata List<T>
+           (accettano solo oggetti,T=tipo generico,accetta solo oggetto anche
+            se fanno riferimento a tipi primitivi);
     3.Lavora con gli oggetti;
 Lavoro in notazione O(n);
 Hashmap:
     1.Lavora con coppie chiave-valore <K,T>;
-     1.1.La chiave deve essere univoca,altrimenti si sovrascrive;
+     1.1.Sono l'omologo degli Array associativi;
+        ( HASHMAP-->JSON )
+     1.2.La chiave deve essere univoca,altrimenti si sovrascrive il valore precedente;
     2.Implementa interfaccia Map<K,T>;
 Lavoro in notazione O(1);
+------------------------------------------------------------------------------------------------------------------------
 
+*********************************************==Modello MVC(java Web)==**************************************************
+MVC:
+    Archittettura di costruzione,ovvero il modo in cui si struttura l'applicazione.
+    1.Model         |
+    2.View          |==\ Sono obligatori
+    3.Controller    |==/
+    4.Repository    |
+    5.Utils
+    6.Exceptions
+    7.Enums
+    tutti questi punti sono da considerare entità del nostro dominio:
+       Model--> Chi rappresento e come lo rappresento nel mio Dominio?
+                tutte le entità create dal DB.
+       View--> È la sezione di visualizzazione!
+       Controller--> Si occupa dell'interazione tra le View e il Model(integrando col DB).
+                     Esiste un controller per ogni model.
+                     Definisco i possibili modi di interagire.
+       Repository--> È un package che contiene le chiamate a DB,
+                     variante dello schema precedente,interazione tra Repository e Controller per
+                     migliorare la leggibilità;
+                     Definiscono i metodi di comunicazione con il DB per ogni modello.
+                     interfacce che definiscono i metodi.
+Applicazioni monolitiche:
+facili da strutturare con MVC;
+MVVM modello utilizzato spesso su mobile;
+------------------------------------------------------------------------------------------------------------------------
+
+****************************************==Utilizzo di Spring per CRUD==*************************************************
+
+Schema per Delete/Update:
+    1.Verificare cosa si vuole modificare.-->Solitamente non tocco l'id,ma gli altri campi.-->Per evitare
+      overload di metodi,modifico(passo) l'intero oggetto,modificando i campi che voglio.Come parametro forlmale del
+      metodo passerò l'oggetto.
+      PUTMAPPING-->Update
+      DELETEMAPPING-->Delete
+    2.Nella Repository, copio la Insert adattando il codice per la query di Update/Delete specificando l'id da
+      cancellare/modificare.
+    3.Da Postman specificare:
+        3.1.Il metodo http(PUT o DELETE).
+        3.2.Inserire indirizzo di Spring.
+        3.3.Specificare nel Tab "params" l'id da MOD/CANC.
+        3.4.IL body con il nuovo oggetto da modificare.
