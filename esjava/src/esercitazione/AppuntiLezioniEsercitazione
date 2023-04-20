@@ -256,6 +256,9 @@ Lavoro in notazione O(1);
 
 *********************************************==Modello MVC(java Web)==**************************************************
 MVC:
+In JDBC la repository è una classe!
+In SpringBoot è un interfaccia.
+
     Archittettura di costruzione,ovvero il modo in cui si struttura l'applicazione.
     1.Model         |
     2.View          |==\ Sono obligatori
@@ -267,6 +270,8 @@ MVC:
     tutti questi punti sono da considerare entità del nostro dominio:
        Model--> Chi rappresento e come lo rappresento nel mio Dominio?
                 tutte le entità create dal DB.
+                Tempolate del nostro dominio.
+                Classi che rappresentano le tabelle SQL.
        View--> È la sezione di visualizzazione!
        Controller--> Si occupa dell'interazione tra le View e il Model(integrando col DB).
                      Esiste un controller per ogni model.
@@ -276,9 +281,24 @@ MVC:
                      migliorare la leggibilità;
                      Definiscono i metodi di comunicazione con il DB per ogni modello.
                      interfacce che definiscono i metodi.
+                     Comunica con controller e DB.(Ci vanno tutti i metodi della libreria JDBC
+                     che manipalono i dati del DB, le nostre query SQL)
+                     I metodi vanno statici
 Applicazioni monolitiche:
 facili da strutturare con MVC;
 MVVM modello utilizzato spesso su mobile;
+
+view--> Ux/Ui (html,Angular,React...) parte grafica
+       localhost:#porta/indirizzoController
+          |                             |
+ definito dall'applicazione         @RequestMapping(...){permette di poter utilizzare
+ proprities                         @RestController     o consumere risorse per quella specifico dominio}
+ (server.port=8081)
+
+@SpringBootApplication
+il file che continene questa ancora sarà il mio main e quando compilerò il programma
+sara questo ad essere eseguito.
+
 ------------------------------------------------------------------------------------------------------------------------
 
 ****************************************==Utilizzo di Spring per CRUD==*************************************************
